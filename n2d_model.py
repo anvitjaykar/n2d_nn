@@ -95,25 +95,6 @@ def autoencoder(dims, act='relu'):
 
 if __name__ == "__main__":
 
-    """ parser = argparse.ArgumentParser(
-        description='(Not Too) Deep',
-        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument('dataset', default='mnist', )
-    parser.add_argument('--n_clusters', default=10, type=int)
-    parser.add_argument('--batch_size', default=256, type=int)
-    parser.add_argument('--pretrain_epochs', default=1000, type=int)
-    parser.add_argument('--ae_weights', default=None)
-    parser.add_argument('--save_dir', default='results/n2d')
-    parser.add_argument('--umap_dim', default=2, type=int)
-    parser.add_argument('--umap_neighbors', default=10, type=int)
-    parser.add_argument('--umap_min_dist', default="0.00", type=str)
-    parser.add_argument('--umap_metric', default='euclidean', type=str)
-    parser.add_argument('--cluster', default='GMM', type=str)
-    parser.add_argument('--eval_all', default=False, action='store_true')
-    parser.add_argument('--manifold_learner', default='UMAP', type=str)
-    args = parser.parse_args()
-    print(args) """
-
     optimizer = 'adam'
     from datasets import load_mnist, load_mnist_test
 
